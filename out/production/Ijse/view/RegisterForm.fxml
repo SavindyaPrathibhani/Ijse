@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
 <AnchorPane prefHeight="667.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
    <children>
-      <TextField layoutX="60.0" layoutY="69.0" promptText="student_id" />
-      <TextField layoutX="60.0" layoutY="131.0" promptText="student_name" />
-      <TextField layoutX="60.0" layoutY="200.0" promptText="email" />
-      <TextField layoutX="60.0" layoutY="267.0" promptText="contact" />
-      <TextField layoutX="60.0" layoutY="334.0" promptText="address" />
-      <TextField layoutX="60.0" layoutY="403.0" promptText="nic" />
-      <TextField layoutX="554.0" layoutY="69.0" promptText="registration_id" />
-      <TextField layoutX="554.0" layoutY="131.0" promptText="reg_date" />
-      <TextField layoutX="554.0" layoutY="200.0" promptText="intake_id" />
+      <TextField fx:id="txtID" layoutX="60.0" layoutY="69.0" promptText="student_id" />
+      <TextField fx:id="txtName" layoutX="60.0" layoutY="131.0" promptText="student_name" />
+      <TextField fx:id="txtEmail" layoutX="60.0" layoutY="200.0" promptText="email" />
+      <TextField fx:id="txtContact" layoutX="60.0" layoutY="267.0" promptText="contact" />
+      <TextField fx:id="txtAddress" layoutX="60.0" layoutY="334.0" promptText="address" />
+      <TextField fx:id="txtNic" layoutX="60.0" layoutY="403.0" promptText="nic" />
+      <TextField fx:id="txtRegID" layoutX="554.0" layoutY="69.0" promptText="registration_id" />
+      <TextField fx:id="txtRegDate" layoutX="554.0" layoutY="131.0" promptText="reg_date" />
+      <TextField fx:id="txtIntakeId" layoutX="554.0" layoutY="200.0" promptText="intake_id" />
+      <Button fx:id="btnRegister" layoutX="583.0" layoutY="365.0" mnemonicParsing="false" onAction="#registerOnAction" text="Register Student" />
    </children>
 </AnchorPane>
