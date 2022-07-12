@@ -21,7 +21,10 @@ public class MainFormController {
         loader.getChildren().add(load);
     }
 
-    public void searchOnAction(ActionEvent actionEvent) {
+    public void searchOnAction(ActionEvent actionEvent) throws IOException {
+        loader.getChildren().clear();
+        Parent load= FXMLLoader.load(getClass().getResource("/View/SearchForm.fxml"));
+        loader.getChildren().add(load);
     }
 
     public void updateOnAction(ActionEvent actionEvent) {
